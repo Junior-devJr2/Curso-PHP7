@@ -22,10 +22,26 @@
 	//echo json_encode($search);
 
 	//carrega um usuario usando o login e a senha
+	//$usuario = new Usuario();
+	//$usuario->login("JOSE","ABC123");
+	//echo $usuario;
+
+	/* criando um novo usuario (insert)
+	$aluno = new Usuario();
+	$aluno->setDeslogin("aluno");
+	$aluno->setDessenha("@lun0");
+
+	$aluno->insert();
+
+	echo $aluno;
+	*/
+
 	$usuario = new Usuario();
-	$usuario->login("JOSE","ABC123");
+
+	$usuario->loadById(3);
+
+	$usuario->update("professor", "apsd#$$@ws23");
 
 	echo $usuario;
-
 
  ?>
