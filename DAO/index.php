@@ -36,11 +36,20 @@
 	echo $aluno;
 	*/
 
+	/* alterar um usuario
 	$usuario = new Usuario();
 
 	$usuario->loadById(3);
 
 	$usuario->update("professor", "apsd#$$@ws23");
+
+	echo $usuario;
+	*/
+	$usuario = new Usuario();
+
+	$usuario->loadById(2);
+
+	$usuario->delete();
 
 	echo $usuario;
 
